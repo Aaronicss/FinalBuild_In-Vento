@@ -1,12 +1,3 @@
-// Load environment variables from .env file if it exists
-// Install dotenv: npm install --save-dev dotenv
-try {
-  require('dotenv').config({ path: '.env' });
-} catch (error) {
-  // dotenv not installed or .env doesn't exist
-  // Environment variables can be set directly in the shell
-}
-
 module.exports = {
   expo: {
     name: "in-vento",
@@ -20,11 +11,15 @@ module.exports = {
     extra: {
       weatherCity: process.env.WEATHER_CITY || "Bacoor",
       weatherApiKey: process.env.WEATHER_API_KEY || "",
+      "eas": {
+        "projectId": "2eebaf7b-ff06-4d7c-a1b6-6f26e877d869"
+      },
     },
     ios: {
       supportsTablet: true,
     },
     android: {
+      package: "com.aaronicss.invento",
       adaptiveIcon: {
         backgroundColor: "#E6F4FE",
         foregroundImage: "./assets/images/android-icon-foreground.png",
