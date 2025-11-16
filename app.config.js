@@ -1,8 +1,12 @@
 module.exports = {
   expo: {
     name: "in-vento",
-    slug: "in-vento",
+    slug: "in-vento-uohozodpe40lbpj5kcqh",
     version: "1.0.0",
+
+    owner: "aaronicss",
+
+
     orientation: "portrait",
     icon: "./assets/images/icon.png",
     scheme: "invento",
@@ -12,7 +16,7 @@ module.exports = {
       weatherCity: process.env.WEATHER_CITY || "Bacoor",
       weatherApiKey: process.env.WEATHER_API_KEY || "",
       "eas": {
-        "projectId": "2eebaf7b-ff06-4d7c-a1b6-6f26e877d869"
+        "projectId": "d78cf9be-62c4-4329-a898-17543a1f27de"
       },
     },
     ios: {
